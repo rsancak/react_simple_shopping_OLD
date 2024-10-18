@@ -1,0 +1,50 @@
+@import '../../style.scss';
+
+.saving_section {
+    .box {
+        padding-top: 45px;
+        background-color: #7fd7eb;
+        color: #fff;
+        border-radius: 15px;
+    }
+
+    .row {
+        align-items: center;
+    }
+
+    .img-box {
+        padding: 15px 0 0 25px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .detail-box {
+        padding: 0 25px;
+
+        p {
+            margin-top: 5px;
+        }
+
+        .btn-box {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 35px -5px 0;
+
+            a {
+                width: 165px;
+                text-align: center;
+                margin: 5px;
+            }
+
+            .btn1 {
+                @include hero_btn(#109dbd, #fff, 10px, 0, 0)
+            }
+
+            .btn2 {
+                @include hero_btn(#fff, #000, 10px, 0, 0)
+            }
+        }
+    }
+}

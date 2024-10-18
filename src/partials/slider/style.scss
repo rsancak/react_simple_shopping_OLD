@@ -1,0 +1,64 @@
+@import '../../style.scss';
+.slider_section {
+  .slider_container {
+    color: #fefefe;
+    background-color: $black;
+    background-color: #f89cab;
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+
+  .row {
+    align-items: center;
+  }
+
+  .owl-item {
+    .img-box {
+      display: flex;
+      justify-content: center;
+      padding: 45px;
+
+      img {
+        width: 250px;
+      }
+    }
+  }
+  
+  .detail-box {
+    padding-left: 45px;
+    margin: 45px 0;
+
+    h1 {
+      font-weight: bold;
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+    }
+
+    a {
+      @include hero_btn(#db4566, $white, 10px, 40px, 5px);
+      margin-top: 25px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.owl-carousel {
+  .owl-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  
+    button.owl-prev {
+      padding: 0px 20px !important;
+      border: 1px solid #fff;
+      font-size: 30px;
+    }
+    button.owl-next {
+      padding: 0px 20px !important;
+      border: 1px solid #fff;
+      font-size: 30px;
+      margin-left: 15px;
+    }
+  }
+}

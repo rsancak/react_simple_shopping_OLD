@@ -1,0 +1,27 @@
+@mixin main-font {
+    font-family: "poppins", sans-serif;
+}
+
+@mixin hero_btn($col1,
+    $col2,
+    $pad1,
+    $pad2,
+    $bRadius) {
+    display: inline-block;
+    padding: $pad1 $pad2;
+    background-color: $col1;
+    color: $col2;
+    border: 1px solid $col1;
+    border-radius: $bRadius;
+    transition: all .3s;
+
+    &:hover {
+        background-color: transparent;
+        color: $col1;
+    }
+}
+
+@mixin upperBold {
+    text-transform: uppercase;
+    font-weight: bold;
+}
